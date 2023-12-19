@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.contentPage {
+  @apply absolute top-24 h-[calc(100vh-96px)];
+}
+
+.monster {
+  display: flex;
+}
+
+.projectCard {
+}
+.projectCard .monster-eye {
+  transform: translate(var(--x), var(--y));
+  transition: 0.4s linear;
+}
+
+/* .react-flow .react-flow__handle {
+  width: 5px;
+  height: 5px;
+  border-radius: 2.5px;
+  border-color: #22c55e;
+  background-color: #22c55e;
+} */
+
+.intersection-flow .react-flow__node {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  border-radius: 1px;
+  border-width: 2px;
+  box-shadow: 6px 6px 0 1px rgba(0, 0, 0, 0.7);
+}
+
+/* .intersection-flow .react-flow__node.selected {
+  box-shadow: 6px 6px 0 1px rgba(0, 0, 0, 0.7);
+  background-color: yellow !important;
+} */
+.intersection-flow .react-flow__node:focus {
+  box-shadow: 6px 6px 0 1px rgba(0, 0, 0, 0.7);
+  border-color: #f97316 !important;
+  border-width: 6px;
+  /* background-color: blue !important; */
+}
+
+.intersection-flow .react-flow__node:hover {
+  box-shadow: 6px 6px 0 1px rgba(0, 0, 0, 0.7);
+  background-color: #e2e4e6 !important;
+}
+
+.react-flow__handle:hover {
+  height: 15px;
+  width: 15px;
+  border-radius: 7.5px !important;
+  border-color: #22c55e !important;
+  border-width: 3px;
+  background-color: #e2e4e6 !important;
+}
+
+.intersection-flow .react-flow__handle {
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.react-flow__handle-left {
+  left: -8px;
+}
+
+.react-flow__handle-right {
+  right: -8px;
+}
+
+/* :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
